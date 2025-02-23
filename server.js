@@ -4,6 +4,8 @@ const cors = require("cors");
 const multer = require("multer");
 const admin = require("firebase-admin");
 const authenticateUser = require("./firebaseAuth");
+const Tesseract = require("tesseract.js");
+const { Configuration, OpenAIApi } = require("openai");
 
 const app = express();
 app.use(cors());
@@ -28,12 +30,18 @@ try {
   process.exit(1);
 }
 
-// ✅ API Test Route
+// Initialize OpenAI configuration
+const configuration = new Configuration({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+const openai = new OpenAIApi(configuration);
+
+// API Test Route
 app.get("/", (req, res) => {
   res.send("AI Tax Assistant Backend Running ✅");
 });
 
-// ✅ User Login Route
+// User Login Route
 app.post("/login", async (req, res) => {
   const { email } = req.body;
   try {
@@ -44,14 +52,13 @@ app.post("/login", async (req, res) => {
   }
 });
 
-// ✅ Protected Route Example (Requires Firebase Authentication)
+// Protected Route Example
 app.get("/user-info", authenticateUser, (req, res) => {
   res.json({ message: "Protected Route Accessed ✅", user: req.user });
 });
 
-const Tesseract = require("tesseract.js");
+// OCR Upload Endpoint
 const upload = multer({ dest: "uploads/" });
-
 app.post("/upload", upload.single("file"), async (req, res) => {
   if (!req.file) return res.status(400).send("No file uploaded.");
 
@@ -63,44 +70,26 @@ app.post("/upload", upload.single("file"), async (req, res) => {
   }
 });
 
-// Import necessary packages
-const { Configuration, OpenAIApi } = require("openai");
-const express = require("express");
-const authenticateUser = require("./firebaseAuth"); // ensure this middleware is set up
-require("dotenv").config();
-
-// Initialize OpenAI configuration
-const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-const openai = new OpenAIApi(configuration);
-
-const app = express();
-app.use(express.json());
-
-// POST endpoint for tax calculations and deduction suggestions
+// Tax Calculation & Deduction Suggestions Endpoint
 app.post("/calculate-tax", authenticateUser, async (req, res) => {
   const { extractedText, income } = req.body;
 
-  // Validate required inputs
   if (!extractedText || !income) {
     return res.status(400).json({ error: "Missing OCR text or income data." });
   }
 
   try {
-    // --- Rule-based Tax Deduction Logic ---
+    // Rule-based Tax Deduction Logic
     let deductions = [];
-
-    // Example rule: check for keywords in the OCR text
     if (extractedText.toLowerCase().includes("charitable donation")) {
       deductions.push("Charitable Donation Deduction");
     }
     if (extractedText.toLowerCase().includes("mortgage interest")) {
       deductions.push("Mortgage Interest Deduction");
     }
-    // Add additional rules as needed...
+    // Additional rules can be added here
 
-    // --- AI-powered Deduction Suggestions ---
+    // AI-powered Deduction Suggestions
     const aiPrompt = `Given the following extracted tax document content: "${extractedText}" and an annual income of ${income}, list potential additional tax deductions and compliance considerations.`;
     const aiResponse = await openai.createCompletion({
       model: "text-davinci-003",
@@ -111,7 +100,6 @@ app.post("/calculate-tax", authenticateUser, async (req, res) => {
 
     const aiSuggestions = aiResponse.data.choices[0].text.trim();
 
-    // Return combined results
     res.json({
       ruleBasedDeductions: deductions,
       aiSuggestions: aiSuggestions,
@@ -122,13 +110,7 @@ app.post("/calculate-tax", authenticateUser, async (req, res) => {
   }
 });
 
-// Example test endpoint
-app.get("/", (req, res) => {
-  res.send("AI Tax Assistant Backend Running ✅");
-});
-
-// Start the server
-const PORT = process.env.PORT || 5000;
+// Start the Server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
