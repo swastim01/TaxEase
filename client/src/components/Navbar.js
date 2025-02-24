@@ -1,22 +1,18 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Moon, Sun } from "lucide-react";
 
-export default function Navbar() {
-  const [darkMode, setDarkMode] = useState(false);
-
+export default function Navbar({ darkMode, setDarkMode }) {
   return (
-    <nav className={`navbar navbar-expand-lg ${darkMode ? "bg-dark text-white" : "bg-light text-dark"}`}>
+    <nav className={`navbar navbar-expand-lg ${darkMode ? "navbar-dark bg-dark" : "navbar-light bg-light"}`}>
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          💰 AI Tax Assistant
-        </Link>
+        <Link className={`navbar-brand ${darkMode ? "text-white" : "text-dark"}`} to="/">💰 TaxEase</Link>
         <div className="navbar-nav">
-          <Link className="nav-link" to="/upload">Upload Document</Link>
-          <Link className="nav-link" to="/chatbot">AI Chatbot</Link>
+          <Link className={`nav-link ${darkMode ? "text-white" : "text-dark"}`} to="/upload">Upload Document</Link>
+          <Link className={`nav-link ${darkMode ? "text-white" : "text-dark"}`} to="/chatbot">AI Chatbot</Link>
         </div>
         <button onClick={() => setDarkMode(!darkMode)} className="btn btn-outline-secondary">
-          {darkMode ? <Sun /> : <Moon />} {darkMode ? "Light Mode" : "Dark Mode"}
+          {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+          <span className="ms-2">{darkMode ? "Light Mode" : "Dark Mode"}</span>
         </button>
       </div>
     </nav>
