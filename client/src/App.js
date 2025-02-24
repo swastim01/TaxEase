@@ -1,22 +1,21 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Dashboard from "./components/Dashboard";
-import Upload from "./components/Upload";
-import Chatbot from "./components/Chatbot";
-import Navbar from "./components/Navbar"; // ✅ Import Correctly
-
-
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar.js";
+import Dashboard from "./components/Dashboard.js";
+import Upload from "./components/Upload.js";
+import Chatbot from "./components/Chatbot.js";
 
 function App() {
   return (
-    <div className="container text-center">
-      <h1 className="text-primary">Welcome to TaxEase</h1>
-      <p className="lead">Securely upload your tax documents and get AI-powered insights.</p>
-      <button className="btn btn-success">Get Started</button>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/upload" element={<Upload />} />
+        <Route path="/chatbot" element={<Chatbot />} />
+      </Routes>
+    </Router>
   );
 }
-
 
 export default App;
