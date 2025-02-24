@@ -5,7 +5,13 @@ const multer = require("multer");
 const admin = require("firebase-admin");
 const authenticateUser = require("./firebaseAuth");
 const Tesseract = require("tesseract.js");
-const { Configuration, OpenAIApi } = require("openai");
+const OpenAI = require("openai");
+require("dotenv").config(); // Load environment variables
+
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY, // Load API key securelys
+});
+
 
 const app = express();
 app.use(cors());
@@ -30,11 +36,6 @@ try {
   process.exit(1);
 }
 
-// Initialize OpenAI configuration
-const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-const openai = new OpenAIApi(configuration);
 
 // API Test Route
 app.get("/", (req, res) => {
