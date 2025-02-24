@@ -1,27 +1,31 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { Moon, Sun } from "lucide-react";
 
-const Navbar = () => {
+export default function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
 
-  const toggleDarkMode = () => {
-    document.documentElement.classList.toggle("dark"); // Toggles dark mode
-    setDarkMode(!darkMode);
-  };
-
   return (
-    <nav className="bg-blue-600 dark:bg-gray-900 p-4 flex justify-between items-center shadow-lg">
-      <h1 className="text-white text-xl font-bold">💰 AI Tax Assistant</h1>
-      <motion.button
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        onClick={toggleDarkMode}
-        className="bg-white dark:bg-gray-700 dark:text-white px-4 py-2 rounded-lg shadow-lg"
-      >
-        {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
-      </motion.button>
-    </nav>
+    <div className={`${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"} transition-all`}>
+      <nav className="flex justify-between items-center px-6 py-4 shadow-md">
+        <h1 className="text-2xl font-bold flex items-center">
+          <span className="mr-2">💰</span> AI Tax Assistant
+        </h1>
+        <div className="flex gap-4">
+          <a href="/upload" className="text-blue-500 hover:underline">
+            Upload Document
+          </a>
+          <a href="/chatbot" className="text-blue-500 hover:underline">
+            AI Chatbot
+          </a>
+          <button
+            onClick={() => setDarkMode(!darkMode)}
+            className="flex items-center bg-gray-200 dark:bg-gray-800 px-3 py-1 rounded-lg transition-all"
+          >
+            {darkMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-600" />}
+            <span className="ml-2">{darkMode ? "Light Mode" : "Dark Mode"}</span>
+          </button>
+        </div>
+      </nav>
+    </div>
   );
-};
-
-export default Navbar;
+}

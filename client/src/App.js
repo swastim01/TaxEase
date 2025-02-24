@@ -3,19 +3,20 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
 import Upload from "./components/Upload";
 import Chatbot from "./components/Chatbot";
-import Navbar from "./components/Navbar"; // 🟢 Import Navbar
+import Navbar from "./components/Navbar"; // ✅ Import Correctly
+
+
+
 
 function App() {
   return (
-    <Router>
-      <Navbar /> {/* 🟢 Add Navbar Here */}
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/upload" element={<Upload />} />
-        <Route path="/chatbot" element={<Chatbot />} />
-      </Routes>
-    </Router>
+    <div className="container text-center">
+      <h1 className="text-primary">Welcome to TaxEase</h1>
+      <p className="lead">Securely upload your tax documents and get AI-powered insights.</p>
+      <button className="btn btn-success">Get Started</button>
+    </div>
   );
 }
+
 
 export default App;
