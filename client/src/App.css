@@ -11,8 +11,8 @@ body {
   color: black !important;
 }
 
-/* 🌙 Dark Mode */
-.dark-mode {
+/* 🌙 Dark Mode (Applied to Entire Site) */
+body.dark-mode {
   background-color: #001F3F !important; /* Dark blue */
   color: white !important;
 }
@@ -53,6 +53,7 @@ body {
   align-items: center;
   height: 80vh;
   text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Styled File Input (Hidden Default) */
@@ -83,6 +84,10 @@ body {
   color: #333;
 }
 
+.dark-mode .file-name {
+  color: #ddd;
+}
+
 /* Upload Button */
 .btn-lg {
   padding: 12px 30px;
@@ -93,6 +98,14 @@ body {
 
 .btn-success:hover {
   background-color: #218838;
+}
+
+.dark-mode .btn-success {
+  background-color: #28a745;
+}
+
+.dark-mode .btn-success:hover {
+  background-color: #1e7e34;
 }
 
 /* AI Chat Popup (Bottom Right) */
@@ -112,3 +125,12 @@ body {
 .chat-popup:hover {
   background-color: #0056b3;
 }
+
+.dark-mode .chat-popup {
+  background-color: #5a32a3;
+}
+
+.dark-mode .chat-popup:hover {
+  background-color: #4b2c91;
+}
+

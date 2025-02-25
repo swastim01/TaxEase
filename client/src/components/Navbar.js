@@ -9,6 +9,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
         <div className="navbar-nav">
           <Link className={`nav-link ${darkMode ? "text-white" : "text-dark"}`} to="/upload">Upload Document</Link>
           <Link className={`nav-link ${darkMode ? "text-white" : "text-dark"}`} to="/chatbot">AI Chatbot</Link>
+          <Link className={`nav-link ${darkMode ? "text-white" : "text-dark"}`} to="/tax-calculator">Tax Calculator</Link> {/* New Link */}
         </div>
         <button onClick={() => setDarkMode(!darkMode)} className="btn btn-outline-secondary">
           {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
