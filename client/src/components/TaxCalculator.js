@@ -57,6 +57,50 @@ const TaxCalculator = () => {
       <p className="text-muted text-center">As amended up to Finance (No.2) Act 2024</p>
       
       <form>
+
+             
+        {/* Assessment Year */}
+        <div className="mb-3">
+            <label className="form-label">Assessment Year</label>
+            <select className="form-select">
+              <option>2025-2026</option>
+              <option>2024-2025</option>
+            </select>
+          </div>
+  
+          {/* Tax Payer Type */}
+          <div className="mb-3">
+            <label className="form-label">Tax Payer</label>
+            <select className="form-select">
+              <option>Individual</option>
+              <option>HUF</option>
+              <option>AOPs/BOI</option>
+              <option>Domestic Company</option>
+              <option>Foreign</option>
+            </select>
+          </div>
+  
+          {/* Age Category */}
+          <div className="mb-3">
+            <label className="form-label">Category (Age)</label>
+            <select className="form-select">
+              <option>Less than 60 years</option>
+              <option>Equal to 60 years or more but less than 80 years</option>
+              <option>Equal to 80 years or more</option>
+            </select>
+          </div>
+  
+          {/* Residential Status */}
+          <div className="mb-3">
+            <label className="form-label">Residential Status</label>
+            <select className="form-select">
+              <option>Resident</option>
+              <option>Not Resident</option>
+            </select>
+          </div>
+
+      
+
         <div className="mb-3">
           <label className="form-label">Net Taxable Income</label>
           <input 
@@ -100,3 +144,6 @@ const TaxCalculator = () => {
 };
 
 export default TaxCalculator;
+
+
+
