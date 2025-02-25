@@ -3,7 +3,10 @@ import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from "react
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer"
 import TaxCalculator from "./components/TaxCalculator"; // Import from components
+import ChatbotPage from "./components/Chatbot";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -58,16 +61,6 @@ const UploadPage = () => {
     </div>
   );
 };
-
-
-
-const ChatbotPage = () => (
-  <div className="center-content">
-    <h2>Coming Soon 🚀</h2>
-    <p>Our AI chatbot is in development. Stay tuned!</p>
-  </div>
-);
-
 
 
 
