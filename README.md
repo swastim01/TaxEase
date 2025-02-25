@@ -175,36 +175,36 @@ Click here to view the first version - [demo link](https://taxease-al9uzd15j-swa
 Click here to view deployment details - [link](https://vercel.com/swasti-mishras-projects/taxease/EvRimzbsxHGU7UqE6LHsjbB95nnt)
 
 ## Images
-![i1](image.png)
+![i1](images/image.png)
 
 *Fig 1: Basic Landing Page – to be enhanced in next version*
 
-![i2](image-1.png)
+![i2](images/image-1.png)
 
 *Fig 2.1: Basic Upload Page – Allows users to upload tax documents (PDFs, images). The backend processes these files using Google Vision API for OCR-based data extraction, automatically populating relevant tax fields.*
 
-![i3](image-2.png)
+![i3](images/image-2.png)
 
 *Fig 2.2: Basic Upload Page – Depicting uploading functionality*
 
-![i4](image-3.png)
+![i4](images/image-3.png)
 
 *Fig 3: AI Chatbot Interface – Provides real-time assistance for tax-related queries. Users can ask tax questions, get personalized tax-saving suggestions, and clarify deductions. The chatbot, powered by OpenAI's GPT, offers intelligent, context-aware responses and ensures a smooth user experience.*
 
-![i5](image-4.png)
-![i6](image-5.png)
-![i7](image-6.png)
+![i5](images/image-4.png)
+![i6](images/image-5.png)
+![i7](images/image-6.png)
 
 *Fig 4 (combined above 3 images): Tax Calculator Page – An interactive tax calculator that allows users to input financial details using various dropdowns (e.g., income sources, deductions, exemptions, investment details). It dynamically computes tax liability and suggests tax-saving strategies based on user inputs.*
 
-![i8](image-7.png)
+![i8](images/image-7.png)
 
 *Fig 5.1: Entering Taxable Income – Users manually enter their taxable income, including salary, business income, and other sources. The system validates inputs and ensures accuracy before proceeding*
 
-![i9](image-8.png)
+![i9](images/image-8.png)
 
 *Fig 5.2: Calculated Tax Summary – Once the user enters the required details, the system automatically calculates total tax liability, applicable deductions, and net payable tax. It also provides insights on potential tax-saving opportunities.*
 
-![i10](image-9.png)
+![i10](images/image-9.png)
 
 *Fig 6: Dark mode is enabled on all pages.*
