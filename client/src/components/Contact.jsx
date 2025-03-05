@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { motion } from "framer-motion";
 
 const ContactUs = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Your message has been sent successfully!");
+    setFormData({ name: "", email: "", message: "" });
+  };
+
   return (
     <section className="py-5 bg-light">
       <Container>
@@ -32,23 +48,45 @@ const ContactUs = () => {
               transition={{ delay: 0.3, duration: 0.5 }}
               className="bg-white p-4 rounded shadow-sm"
             >
-              <Form>
+              <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3">
                   <Form.Label>Name</Form.Label>
-                  <Form.Control type="text" placeholder="Enter your name" required />
+                  <Form.Control
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    placeholder="Enter your name"
+                    required
+                  />
                 </Form.Group>
 
                 <Form.Group className="mb-3">
                   <Form.Label>Email</Form.Label>
-                  <Form.Control type="email" placeholder="Enter your email" required />
+                  <Form.Control
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder="Enter your email"
+                    required
+                  />
                 </Form.Group>
 
                 <Form.Group className="mb-3">
                   <Form.Label>Message</Form.Label>
-                  <Form.Control as="textarea" rows={4} placeholder="Your message" required />
+                  <Form.Control
+                    as="textarea"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows={4}
+                    placeholder="Your message"
+                    required
+                  />
                 </Form.Group>
 
-                <Button variant="primary" className="w-100">
+                <Button type="submit" variant="primary" className="w-100">
                   Send Message
                 </Button>
               </Form>
