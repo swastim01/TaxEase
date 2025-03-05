@@ -148,7 +148,7 @@ $ firebase deploy --only functions
 ```
 
 ## Demo Link
-Click here to view the first version - [demo link](https://taxease-f2mqz8mcw-swasti-mishras-projects.vercel.app/)
+Click here to view the first version - [demo link](https://taxease-molsp50dq-swasti-mishras-projects.vercel.app/)
 
 Click here to view deployment details - [link](https://vercel.com/swasti-mishras-projects/taxease/EvRimzbsxHGU7UqE6LHsjbB95nnt)
 
