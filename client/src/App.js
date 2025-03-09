@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { ClipLoader } from "react-spinners";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import TaxCalculator from "./pages/TaxCalculator";
@@ -10,7 +11,8 @@ import LoginPage from "./pages/Login";
 import SignUpPage from "./pages/SignUp"
 import TrackExpenses from "./pages/TrackExpenses"
 import ForumPage from "./pages/Forum"
-
+import InvoiceDetails from "./pages/InvoiceDetails";
+import ComingSoon from "./pages/ComingSoon"
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -42,6 +44,8 @@ function App() {
           <Route path="/forum" element={<ForumPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/sign-up" element={<SignUpPage />} />
+          <Route path="/invoice-details" element={<InvoiceDetails />} />
+          <Route path="/coming-soon" element={<ComingSoon />} />
         </Routes>
       </div>
       <Footer />
