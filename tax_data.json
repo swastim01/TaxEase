@@ -1,0 +1,402 @@
+[
+    {
+        "question": "What is the standard deduction for salaried employees?",
+        "answer": "The standard deduction for salaried employees is \u20b950,000, applicable under both old and new tax regimes, reducing taxable income without additional documentation."
+    },
+    {
+        "question": "How does the new tax regime compare to the old one?",
+        "answer": "The new tax regime offers lower tax rates but removes most deductions (e.g., HRA, 80C), while the old regime retains deductions but has higher tax rates; taxpayers must choose based on their financial situation."
+    },
+    {
+        "question": "What are the tax-saving options under Section 80C?",
+        "answer": "Section 80C allows deductions up to \u20b91.5 lakh for investments in PPF, ELSS, NSC, life insurance premiums, home loan principal repayment, and tuition fees, among others."
+    },
+    {
+        "question": "Is freelance income taxable in India?",
+        "answer": "Yes, freelance income is taxable in India under the head 'Income from Business or Profession' and must be reported in ITR-3 or ITR-4, depending on the presumptive taxation scheme."
+    },
+    {
+        "question": "How can I calculate my total taxable income?",
+        "answer": "Total taxable income is calculated as Gross Total Income (salary, business income, capital gains, etc.) minus deductions under Sections 80C, 80D, and other applicable sections."
+    },
+    {
+        "question": "What deductions are available under Section 80D for health insurance?",
+        "answer": "Section 80D allows deductions up to \u20b925,000 for self, spouse, and children; an additional \u20b925,000 for parents (\u20b950,000 if parents are senior citizens); and \u20b95,000 for preventive health check-ups."
+    },
+    {
+        "question": "How do I claim HRA (House Rent Allowance) exemption?",
+        "answer": "To claim HRA exemption, provide rent receipts, proof of rent payment, and landlord\u2019s PAN (if rent exceeds \u20b91 lakh annually); the exemption is the least of actual HRA, 50%/40% of salary (metro/non-metro), or rent paid minus 10% of salary."
+    },
+    {
+        "question": "Are there any tax benefits for home loans under Section 80EE?",
+        "answer": "Section 80EE provides an additional deduction of \u20b950,000 on home loan interest for first-time homebuyers with loans up to \u20b935 lakh and property value up to \u20b950 lakh, subject to specific conditions."
+    },
+    {
+        "question": "What are the tax implications of investing in mutual funds?",
+        "answer": "Equity mutual funds held for over 12 months attract 10% LTCG tax (above \u20b91 lakh gains); debt funds held for over 36 months attract 20% LTCG with indexation; short-term gains are taxed as per slab rates."
+    },
+    {
+        "question": "How does the presumptive taxation scheme under Section 44ADA work?",
+        "answer": "Section 44ADA allows freelancers and professionals to declare 50% of gross receipts as income and pay tax on it, provided total receipts do not exceed \u20b975 lakh annually."
+    },
+    {
+        "question": "Can I claim deductions for education loans under Section 80E?",
+        "answer": "Yes, Section 80E allows deductions for interest paid on education loans for higher studies, with no upper limit, for up to 8 years or until interest is fully repaid, whichever is earlier."
+    },
+    {
+        "question": "What is the tax treatment of EPF (Employee Provident Fund) withdrawals?",
+        "answer": "EPF withdrawals are tax-free if made after 5 years of continuous service; withdrawals before 5 years are taxable, and TDS applies if withdrawn without PAN or before 5 years."
+    },
+    {
+        "question": "How does Leave Travel Allowance (LTA) work in taxation?",
+        "answer": "LTA is tax-exempt for travel expenses within India for self and family (twice in a block of 4 years), subject to actual travel proof and limits specified by the employer."
+    },
+    {
+        "question": "Are donations to charitable organizations tax-deductible?",
+        "answer": "Yes, donations to specified charitable organizations are tax-deductible under Section 80G, with deductions ranging from 50% to 100% of the donated amount, depending on the organization."
+    },
+    {
+        "question": "How is gratuity taxed for salaried employees?",
+        "answer": "Gratuity is tax-free up to \u20b920 lakh for private sector employees and fully tax-free for government employees; amounts above this limit are taxable as per income slab rates."
+    },
+    {
+        "question": "Do I need to pay GST if I am a freelancer?",
+        "answer": "Yes, freelancers must register for GST if their annual turnover exceeds \u20b920 lakh (\u20b910 lakh for special category states) and charge GST on services provided, filing regular returns."
+    },
+    {
+        "question": "What is the penalty for late filing of income tax returns?",
+        "answer": "The penalty for late filing of ITR is up to \u20b95,000 under Section 234F if filed after the due date but before December 31; \u20b910,000 if filed later, with a reduced penalty of \u20b91,000 for income below \u20b95 lakh."
+    },
+    {
+        "question": "Are stock market gains taxable, and under which sections?",
+        "answer": "Yes, stock market gains are taxable; short-term capital gains (STCG) on equity are taxed at 15%, and long-term capital gains (LTCG) above \u20b91 lakh are taxed at 10%; non-equity gains are taxed as per slab rates or 20% with indexation."
+    },
+    {
+        "question": "Can I claim tax benefits on medical expenses for senior citizens?",
+        "answer": "Yes, medical expenses for senior citizens can be claimed under Section 80D for health insurance premiums and Section 80DDB for specified critical illnesses, up to \u20b91 lakh (\u20b950,000 for non-seniors)."
+    },
+    {
+        "question": "What is the process for filing an income tax return (ITR) in India?",
+        "answer": "To file an ITR, gather documents like Form 16, bank statements, and investment proofs; choose the correct ITR form based on income sources; calculate taxable income, apply deductions, and file online via the Income Tax e-Filing portal using your PAN."
+    },
+    {
+        "question": "What are the tax exemptions available under Section 10?",
+        "answer": "Section 10 provides exemptions for agricultural income, HRA, LTA, gratuity, leave encashment, scholarships, dividends, and interest from specific savings instruments like PPF and tax-free bonds, among others."
+    },
+    {
+        "question": "How is capital gains tax calculated for the sale of property?",
+        "answer": "Capital gains tax on property is calculated as Selling Price - (Indexed Cost of Acquisition + Improvement Costs + Selling Expenses). Long-term gains (held over 24 months) are taxed at 20% with indexation; short-term gains are taxed as per slab rates."
+    },
+    {
+        "question": "What are the differences between long-term and short-term capital gains tax?",
+        "answer": "Long-term capital gains (LTCG) apply to assets held for over 24 months (12 months for equities) and are taxed at 20% with indexation (10% for equities above \u20b91 lakh). Short-term capital gains (STCG) are taxed as per slab rates or 15% for equities."
+    },
+    {
+        "question": "How can I reduce my tax liability as a freelancer?",
+        "answer": "Freelancers can reduce tax liability by claiming business expenses, using the presumptive taxation scheme under Section 44ADA, investing in tax-saving instruments under Section 80C, and deducting health insurance premiums under Section 80D."
+    },
+    {
+        "question": "What is the maximum limit for deductions under Section 80C?",
+        "answer": "The maximum deduction under Section 80C is \u20b91.5 lakh per financial year for investments in PPF, ELSS, life insurance, home loan principal repayment, and tuition fees, among others."
+    },
+    {
+        "question": "How does tax loss harvesting work in India?",
+        "answer": "Tax loss harvesting involves selling loss-making investments to offset capital gains from profitable investments, reducing overall tax liability. Losses can be carried forward for up to 8 years to offset future gains."
+    },
+    {
+        "question": "Can I claim deductions for rent paid if I don't receive HRA?",
+        "answer": "Yes, under Section 80GG, you can claim deductions for rent paid if you don\u2019t receive HRA, up to \u20b960,000 per year, subject to conditions like not owning a house in the city of residence."
+    },
+    {
+        "question": "What are the tax benefits available for startups under the Income Tax Act?",
+        "answer": "Startups can avail a 100% tax holiday for 3 consecutive years out of 10 years under Section 80-IAC, provided they are incorporated between April 1, 2016, and March 31, 2024, and meet specified conditions."
+    },
+    {
+        "question": "How is agricultural income taxed in India?",
+        "answer": "Agricultural income is generally tax-free in India. However, if non-agricultural income exceeds the basic exemption limit, agricultural income is added to determine the tax rate, but only non-agricultural income is taxed."
+    },
+    {
+        "question": "Are there any tax benefits for senior citizens under the new tax regime?",
+        "answer": "The new tax regime offers lower tax rates but removes most deductions, including those for senior citizens. However, senior citizens can still benefit from higher basic exemption limits under both regimes."
+    },
+    {
+        "question": "What is the penalty for non-disclosure of foreign assets in income tax returns?",
+        "answer": "Non-disclosure of foreign assets can attract a penalty of \u20b910 lakh per violation under the Black Money Act, along with prosecution and additional taxes on undisclosed income."
+    },
+    {
+        "question": "How is dividend income taxed under the current tax regime?",
+        "answer": "Dividend income is taxed at the recipient\u2019s applicable income tax slab rates. Additionally, companies pay Dividend Distribution Tax (DDT) before distributing dividends, but this is not applicable post-April 2020."
+    },
+    {
+        "question": "What is the TDS (Tax Deducted at Source) rate for different types of income?",
+        "answer": "TDS rates vary: 10% on interest income (e.g., FDs), 1% on property sales, 2% on contractor payments, 30% on non-PAN transactions, and slab rates on salary income. Rates may vary based on income type and recipient status."
+    },
+    {
+        "question": "How can I check my Form 26AS for tax credit details?",
+        "answer": "Form 26AS can be accessed via the Income Tax e-Filing portal using your PAN. It shows TDS, TCS, and advance tax credits, as well as high-value transactions linked to your PAN."
+    },
+    {
+        "question": "What is the process to correct errors in a filed income tax return?",
+        "answer": "Errors in a filed ITR can be corrected by filing a revised return under Section 139(5) before the end of the relevant assessment year or before the assessment is completed, whichever is earlier."
+    },
+    {
+        "question": "Can I claim tax benefits for home rent if I am self-employed?",
+        "answer": "Yes, self-employed individuals can claim rent payments as business expenses if the rented premises are used for business purposes, or under Section 80GG if used for personal residence."
+    },
+    {
+        "question": "What is the procedure for filing a revised income tax return?",
+        "answer": "To file a revised return, log in to the Income Tax e-Filing portal, select the original return, make corrections, and submit the revised return. Ensure it is filed within the allowed time frame."
+    },
+    {
+        "question": "Are employer contributions to NPS (National Pension System) taxable?",
+        "answer": "Employer contributions to NPS up to 10% of salary (basic + DA) are tax-free under Section 80CCD(2). Employee contributions are eligible for additional deductions under Section 80CCD(1B)."
+    },
+    {
+        "question": "What tax benefits are available under Section 80G for donations?",
+        "answer": "Section 80G provides tax deductions for donations to specified charitable institutions, ranging from 50% to 100% of the donated amount, depending on the organization. For example, donations to the Prime Minister's Relief Fund qualify for a 100% deduction."
+    },
+    {
+        "question": "How do I calculate advance tax liability for self-employed professionals?",
+        "answer": "Advance tax liability is calculated by estimating total annual income, deducting allowable expenses and exemptions, applying the applicable tax rate, and subtracting TDS/TCS. Payments are due in four installments: 15% by June 15, 45% by September 15, 75% by December 15, and 100% by March 15."
+    },
+    {
+        "question": "What are the latest income tax slab rates for individuals in India?",
+        "answer": "For FY 2023-24, under the new tax regime, rates are: 0% up to \u20b93 lakh, 5% on \u20b93-6 lakh, 10% on \u20b96-9 lakh, 15% on \u20b99-12 lakh, 20% on \u20b912-15 lakh, and 30% above \u20b915 lakh. Under the old regime, rates are: 0% up to \u20b92.5 lakh, 5% on \u20b92.5-5 lakh, 20% on \u20b95-10 lakh, and 30% above \u20b910 lakh."
+    },
+    {
+        "question": "How does the Goods and Services Tax (GST) impact freelancers and small businesses?",
+        "answer": "Freelancers and small businesses must register for GST if their annual turnover exceeds \u20b920 lakh (\u20b910 lakh for special category states). They must charge GST on services, file regular returns, and comply with input tax credit rules, which can increase compliance costs but also allow tax credits on business expenses."
+    },
+    {
+        "question": "What are the tax implications of investing in stocks and mutual funds?",
+        "answer": "Equity investments held for over 12 months attract 10% LTCG tax (above \u20b91 lakh gains); short-term gains are taxed at 15%. Debt mutual funds held for over 36 months attract 20% LTCG with indexation; short-term gains are taxed as per slab rates."
+    },
+    {
+        "question": "Can I claim a deduction for home loan interest under both Section 80C and Section 24?",
+        "answer": "No, home loan principal repayment is deductible under Section 80C (up to \u20b91.5 lakh), while interest repayment is deductible under Section 24(b) (up to \u20b92 lakh for self-occupied property). Both cannot be claimed for the same component."
+    },
+    {
+        "question": "What are the different types of allowances that are tax-exempt for salaried employees?",
+        "answer": "Tax-exempt allowances include HRA, LTA, transport allowance (up to \u20b91,600/month), children\u2019s education allowance (up to \u20b9100/month per child), and hostel allowance (up to \u20b9300/month per child). Special allowances like uniform or travel allowances are also exempt."
+    },
+    {
+        "question": "How can I save tax on capital gains from the sale of a house property?",
+        "answer": "You can save tax on capital gains by reinvesting the proceeds in another residential property under Section 54, investing in capital gains bonds under Section 54EC, or using the proceeds to purchase a new residential property under Section 54F."
+    },
+    {
+        "question": "What is the difference between tax exemption, tax deduction, and tax rebate?",
+        "answer": "Tax exemption excludes certain incomes from taxation (e.g., HRA). Tax deduction reduces taxable income (e.g., Section 80C). Tax rebate reduces the tax liability itself (e.g., Section 87A, which provides a rebate up to \u20b912,500 for income below \u20b95 lakh)."
+    },
+    {
+        "question": "What are the tax benefits of investing in the National Pension System (NPS)?",
+        "answer": "NPS offers tax benefits under Section 80CCD(1) up to \u20b91.5 lakh, an additional \u20b950,000 under Section 80CCD(1B), and employer contributions up to 10% of salary under Section 80CCD(2). Partial withdrawals and maturity proceeds are also tax-free under specific conditions."
+    },
+    {
+        "question": "How can I avoid double taxation on foreign income earned by an Indian resident?",
+        "answer": "Double taxation can be avoided by claiming relief under the Double Taxation Avoidance Agreement (DTAA) between India and the foreign country, or by claiming a tax credit for taxes paid abroad under Section 91 of the Income Tax Act."
+    },
+    {
+        "question": "What are the tax rules for crypto trading and investments in India?",
+        "answer": "Crypto income is taxed at 30% on gains with no deductions (except cost of acquisition), and a 1% TDS applies on transactions above \u20b910,000. Losses cannot be offset against other income."
+    },
+    {
+        "question": "How do I calculate depreciation on assets for income tax purposes?",
+        "answer": "Depreciation is calculated based on the asset\u2019s block and the prescribed rates under the Income Tax Act (e.g., 15% for machinery, 10% for furniture). It is applied to the written-down value of the asset block at the beginning of the year."
+    },
+    {
+        "question": "What are the tax implications of gifting money or property to family members?",
+        "answer": "Gifts to relatives (spouse, siblings, etc.) are tax-free. Gifts to non-relatives exceeding \u20b950,000 are taxable in the recipient\u2019s hands under Section 56(2)(x). Gifts of immovable property may attract stamp duty and capital gains tax for the donor."
+    },
+    {
+        "question": "How does the Income Tax Department track high-value transactions?",
+        "answer": "The Income Tax Department tracks high-value transactions through PAN-linked data, including property purchases, cash deposits above \u20b910 lakh, credit card payments above \u20b91 lakh, and mutual fund investments above \u20b92 lakh, among others."
+    },
+    {
+        "question": "What are the consequences of missing the income tax return (ITR) filing deadline?",
+        "answer": "Missing the ITR deadline attracts a penalty of up to \u20b95,000 under Section 234F, interest on unpaid taxes, and loss of carry-forward benefits for losses. Late filing also delays refunds."
+    },
+    {
+        "question": "What are the tax benefits available for women entrepreneurs in India?",
+        "answer": "Women entrepreneurs can avail deductions under Section 80C, 80D, and 80G, and benefit from lower interest rates on loans under government schemes like the Mudra Yojana. They may also qualify for tax holidays under Section 80-IAC for startups."
+    },
+    {
+        "question": "What are the different ways to claim HRA and home loan deductions together?",
+        "answer": "You can claim HRA for rented accommodation while also claiming home loan interest under Section 24(b) for a property in another city. However, you cannot claim HRA and home loan benefits for the same property."
+    },
+    {
+        "question": "How do I report foreign bank accounts and assets in my income tax return?",
+        "answer": "Foreign bank accounts and assets must be disclosed in Schedule FA of the ITR form, providing details like account numbers, maximum balance during the year, and income earned from these assets."
+    },
+    {
+        "question": "What are the tax rules for income earned from YouTube, blogging, or social media?",
+        "answer": "Income from YouTube, blogging, or social media is taxable under the head 'Income from Business or Profession'. Freelancers can opt for the presumptive taxation scheme under Section 44ADA to declare 50% of receipts as income."
+    },
+    {
+        "question": "Can I claim a deduction for medical insurance premiums under Section 80D?",
+        "answer": "Yes, Section 80D allows deductions up to \u20b925,000 for self, spouse, and children; an additional \u20b925,000 for parents (\u20b950,000 if senior citizens); and \u20b95,000 for preventive health check-ups."
+    },
+    {
+        "question": "What are the tax benefits for senior citizens and super senior citizens in India?",
+        "answer": "Senior citizens (60-80 years) have a higher basic exemption limit of \u20b93 lakh, and super senior citizens (80+ years) have a limit of \u20b95 lakh. They also enjoy higher deductions for health insurance under Section 80D and interest income under Section 80TTB."
+    },
+    {
+        "question": "What are the penalties for not linking PAN with Aadhaar?",
+        "answer": "Failure to link PAN with Aadhaar can result in the PAN becoming inoperative, leading to higher TDS/TCS rates, inability to file ITR, and penalties for non-compliance."
+    },
+    {
+        "question": "How can I correct errors in my filed income tax return?",
+        "answer": "Errors in a filed ITR can be corrected by filing a revised return under Section 139(5) before the end of the relevant assessment year or before the assessment is completed, whichever is earlier."
+    },
+    {
+        "question": "What are the tax benefits of donating to charities under Section 80G?",
+        "answer": "Section 80G provides tax deductions for donations to specified charitable institutions, ranging from 50% to 100% of the donated amount, depending on the organization. For example, donations to the Prime Minister's Relief Fund qualify for a 100% deduction."
+    },
+    {
+        "question": "How do I file an ITR if I have multiple sources of income?",
+        "answer": "For multiple income sources, use ITR-2 (if no business income) or ITR-3 (if business income exists). Report all income (salary, house property, capital gains, etc.), claim applicable deductions, and file online via the Income Tax e-Filing portal."
+    },
+    {
+        "question": "What are the tax implications of receiving an inheritance in India?",
+        "answer": "Inheritance is not taxable in India. However, income generated from inherited assets (e.g., rent, dividends) is taxable. If inherited property is sold, capital gains tax applies based on the holding period and indexed cost of acquisition."
+    },
+    {
+        "question": "How does the tax treatment differ for fixed deposits and savings accounts?",
+        "answer": "Interest from fixed deposits is fully taxable and subject to TDS if it exceeds \u20b940,000 (\u20b950,000 for senior citizens). Interest from savings accounts up to \u20b910,000 is exempt under Section 80TTA."
+    },
+    {
+        "question": "What are the tax deductions available for educational expenses and student loans?",
+        "answer": "Tuition fees for up to two children can be claimed under Section 80C (up to \u20b91.5 lakh). Interest on education loans is deductible under Section 80E with no upper limit for up to 8 years."
+    },
+    {
+        "question": "What is Form 16, and how do I use it while filing my ITR?",
+        "answer": "Form 16 is a TDS certificate issued by employers, detailing salary income and TDS deducted. It is used to fill out the salary and TDS details in the ITR form."
+    },
+    {
+        "question": "How can I claim tax benefits if I am a first-time homebuyer?",
+        "answer": "First-time homebuyers can claim deductions under Section 80EEA for additional home loan interest up to \u20b91.5 lakh, provided the loan is sanctioned between April 1, 2019, and March 31, 2023, and the property value does not exceed \u20b945 lakh."
+    },
+    {
+        "question": "What are the tax rules for agricultural income in India?",
+        "answer": "Agricultural income is generally tax-free. However, if non-agricultural income exceeds the basic exemption limit, agricultural income is added to determine the tax rate, but only non-agricultural income is taxed."
+    },
+    {
+        "question": "How do I report losses from stock market trading in my income tax return?",
+        "answer": "Stock market losses can be reported under the 'Capital Gains' schedule in the ITR. Short-term losses can be offset against any capital gains, while long-term losses can only be offset against long-term gains. Unadjusted losses can be carried forward for up to 8 years."
+    },
+    {
+        "question": "What are the exemptions available for gratuity and leave encashment?",
+        "answer": "Gratuity is tax-free up to \u20b920 lakh for private sector employees and fully tax-free for government employees. Leave encashment is tax-free up to \u20b93 lakh for non-government employees and fully exempt for government employees."
+    },
+    {
+        "question": "How does the presumptive taxation scheme benefit small businesses and professionals?",
+        "answer": "The presumptive taxation scheme under Sections 44AD and 44ADA allows small businesses and professionals to declare a fixed percentage of receipts as income (6-8% for businesses, 50% for professionals), reducing compliance burden and simplifying tax calculations."
+    },
+    {
+        "question": "What is the process for filing a revised income tax return?",
+        "answer": "To file a revised return, log in to the Income Tax e-Filing portal, select the original return, make corrections, and submit the revised return. Ensure it is filed within the allowed time frame."
+    },
+    {
+        "question": "How can I check my income tax refund status?",
+        "answer": "You can check your refund status on the Income Tax e-Filing portal under 'View Returns/Forms' or by using the 'Refund Banker' service. The status will show if the refund is processed, credited, or pending."
+    },
+    {
+        "question": "What is the impact of inflation on income tax brackets and deductions?",
+        "answer": "Inflation can lead to adjustments in tax brackets, exemption limits, and deduction thresholds to maintain taxpayers' real income. However, such adjustments are not automatic and depend on government policy."
+    },
+    {
+        "question": "Are gifts received from friends taxable in India?",
+        "answer": "Gifts from relatives are tax-free. Gifts from non-relatives exceeding \u20b950,000 are taxable under Section 56(2)(x), except for gifts on marriage or through inheritance/will."
+    },
+    {
+        "question": "What are the tax benefits available for differently-abled individuals under Section 80U?",
+        "answer": "Section 80U provides a deduction of up to \u20b91.25 lakh for differently-abled individuals, depending on the severity of the disability. This is in addition to other deductions like medical expenses under Section 80DD."
+    },
+    {
+        "question": "How do I handle tax compliance if I move abroad for work?",
+        "answer": "If you move abroad, determine your residential status under Section 6 of the Income Tax Act. Report foreign income in your ITR, claim DTAA benefits to avoid double taxation, and comply with Foreign Account Tax Compliance Act (FATCA) requirements."
+    },
+    {
+        "question": "What are the rules for voluntary disclosure of undisclosed income?",
+        "answer": "Voluntary disclosure of undisclosed income can be made under the Income Declaration Scheme (IDS) or by filing a revised return. However, such disclosures may attract tax, interest, and penalties, but can help avoid prosecution."
+    },
+    {
+        "question": "How can I reduce my tax liability legally in India?",
+        "answer": "You can reduce tax liability by investing in tax-saving instruments (Section 80C), claiming deductions for health insurance (Section 80D), using HRA and LTA exemptions, and opting for the new tax regime if it suits your financial situation."
+    },
+    {
+        "question": "What is the difference between tax deduction and tax exemption?",
+        "answer": "Tax deduction reduces taxable income (e.g., Section 80C), while tax exemption excludes certain incomes from taxation (e.g., HRA, LTA). Both lower the overall tax liability but operate differently."
+    },
+    {
+        "question": "Are cryptocurrencies taxable in India?",
+        "answer": "Yes, cryptocurrencies are taxable at 30% on gains with no deductions (except cost of acquisition), and a 1% TDS applies on transactions above \u20b910,000. Losses cannot be offset against other income."
+    },
+    {
+        "question": "How does GST work, and who needs to register for it?",
+        "answer": "GST is a consumption-based tax levied on goods and services. Businesses with an annual turnover exceeding \u20b920 lakh (\u20b910 lakh for special category states) must register for GST, charge GST on sales, and file regular returns."
+    },
+    {
+        "question": "What are the tax benefits of investing in NPS (National Pension System)?",
+        "answer": "NPS offers tax benefits under Section 80CCD(1) up to \u20b91.5 lakh, an additional \u20b950,000 under Section 80CCD(1B), and employer contributions up to 10% of salary under Section 80CCD(2). Partial withdrawals and maturity proceeds are also tax-free under specific conditions."
+    },
+    {
+        "question": "How can I claim HRA if I live with my parents?",
+        "answer": "You can claim HRA if you pay rent to your parents, provided you have a rent agreement and proof of payment. Your parents must report this rental income in their ITR, but it may be tax-free under Section 10(13A) if they own the property."
+    },
+    {
+        "question": "What is Advance Tax, and who needs to pay it?",
+        "answer": "Advance tax is paid in installments by individuals and businesses whose tax liability exceeds \u20b910,000 in a financial year. It is due in four installments: 15% by June 15, 45% by September 15, 75% by December 15, and 100% by March 15."
+    },
+    {
+        "question": "What are the tax implications of earning income from YouTube or Instagram?",
+        "answer": "Income from YouTube or Instagram is taxable under the head 'Income from Business or Profession'. Freelancers can opt for the presumptive taxation scheme under Section 44ADA to declare 50% of receipts as income."
+    },
+    {
+        "question": "How can senior citizens save taxes under the Income Tax Act?",
+        "answer": "Senior citizens can save taxes by claiming higher deductions under Section 80D for health insurance, Section 80TTB for interest income, and availing the higher basic exemption limit of \u20b93 lakh (\u20b95 lakh for super seniors)."
+    },
+    {
+        "question": "What is the tax treatment of income from freelance work?",
+        "answer": "Income from freelance work is taxable under the head 'Income from Business or Profession'. Freelancers can claim business expenses and opt for the presumptive taxation scheme under Section 44ADA to declare 50% of receipts as income."
+    },
+    {
+        "question": "Can I claim a deduction for interest paid on a personal loan?",
+        "answer": "No, interest paid on a personal loan is not deductible under the Income Tax Act. Only interest on loans taken for specific purposes like home loans or education loans qualifies for deductions."
+    },
+    {
+        "question": "What is the tax treatment of income from a savings account?",
+        "answer": "Interest from a savings account is taxable, but you can claim a deduction of up to \u20b910,000 under Section 80TTA. Any interest exceeding this limit is added to your total income and taxed as per your slab rate."
+    },
+    {
+        "question": "How do I claim a deduction for medical expenses for my parents?",
+        "answer": "You can claim a deduction for medical expenses for your parents under Section 80D for health insurance premiums (up to \u20b925,000 or \u20b950,000 if they are senior citizens) and under Section 80DDB for specified critical illnesses (up to \u20b91 lakh)."
+    },
+    {
+        "question": "What is the tax treatment of income from a fixed deposit?",
+        "answer": "Interest income from fixed deposits is fully taxable and added to your total income. TDS at 10% is deducted if the interest exceeds \u20b940,000 (\u20b950,000 for senior citizens) in a financial year."
+    },
+    {
+        "question": "Can I claim a deduction for expenses on home renovation?",
+        "answer": "No, expenses on home renovation are not deductible under the Income Tax Act. However, if the renovation is considered a capital improvement, it can be added to the cost of acquisition for calculating capital gains when the property is sold."
+    },
+    {
+        "question": "What is the tax treatment of income from a rental property?",
+        "answer": "Rental income is taxed under the head 'Income from House Property'. You can deduct municipal taxes, a standard deduction of 30%, and home loan interest (up to \u20b92 lakh for self-occupied property) before calculating the taxable rental income."
+    },
+    {
+        "question": "Can I claim a deduction for expenses on a child's education abroad?",
+        "answer": "No, expenses on a child's education abroad are not deductible under the Income Tax Act. However, interest on an education loan taken for higher studies abroad is deductible under Section 80E."
+    },
+    {
+        "question": "What is the tax treatment of income from a mutual fund?",
+        "answer": "Income from mutual funds is taxed based on the type of fund and holding period. Equity funds held for over 12 months attract 10% LTCG tax (above \u20b91 lakh gains); debt funds held for over 36 months attract 20% LTCG with indexation. Short-term gains are taxed as per slab rates or 15% for equity funds."
+    },
+    {
+        "question": "Can I claim a deduction for expenses on a car used for business purposes?",
+        "answer": "Yes, if you are self-employed or a business owner, you can claim expenses on a car used for business purposes, such as fuel, maintenance, and depreciation, as business expenses. Proper records and bills must be maintained."
+    },
+    {
+        "question": "What is the tax treatment of income from a pension?",
+        "answer": "Pension income is taxable under the head 'Income from Salary'. However, commuted pension (one-third for government employees and half for others) is tax-free. You can also claim a deduction for contributions to the National Pension System (NPS) under Section 80CCD(1)."
+    }
+]
