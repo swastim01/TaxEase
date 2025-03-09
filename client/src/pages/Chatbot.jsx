@@ -18,6 +18,26 @@ export default function ChatGPTInterface() {
     sessionStorage.setItem("chatMessages", JSON.stringify(messages));
   }, [messages]);
 
+  const getAIResponse = (userText) => {
+    if (userText.toLowerCase() === "hi") {
+      return "I'm still learning, but I'll try my best to help!";
+    }
+    if (userText.toLowerCase().includes("what deductions can i claim under section 80c")) {
+      return (
+        "Under Section 80C, you can claim deductions up to ₹1.5 lakh per year on investments like:\n        - Employee Provident Fund (EPF)\n" +
+        "- Public Provident Fund (PPF)\n" +
+        "- National Savings Certificate (NSC)\n" +
+        "- Life Insurance Premiums\n" +
+        "- 5-year Fixed Deposits\n" +
+        "- Equity Linked Savings Scheme (ELSS)\n" +
+        "- Principal repayment on home loans\n" +
+        "- Tuition fees for children\n" +
+        "Make sure to keep receipts for tax filing!"
+      );
+    }
+    return "Fetching information, will let you know soon!";
+  };
+
   const sendMessage = () => {
     if (!input.trim()) return;
     const userMessage = { text: input, sender: "user" };
@@ -26,7 +46,7 @@ export default function ChatGPTInterface() {
     setIsTyping(true);
 
     setTimeout(() => {
-      const aiResponse = { text: "Coming Soon: Multi-language support!", sender: "ai" };
+      const aiResponse = { text: getAIResponse(input), sender: "ai" };
       setMessages([...messages, userMessage, aiResponse]);
       setIsTyping(false);
     }, 2000);
