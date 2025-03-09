@@ -3,3 +3,5 @@ serviceAccountKey.json
 tax-assistant-12bcd-firebase-adminsdk-fbsvc-868fdfe6db.json
 .env
 .vercel
+start_finetune.py
+upload_training_data.py
