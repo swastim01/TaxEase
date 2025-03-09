@@ -1,25 +1,32 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import { UploadCloud, MessageCircle } from "lucide-react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Upload() {
   const [file, setFile] = useState(null);
   const [preview, setPreview] = useState(null);
-  const [response, setResponse] = useState(null);
   const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState(0);
+  const navigate = useNavigate();
 
   const handleFileChange = (e) => {
     const uploadedFile = e.target.files[0];
     if (uploadedFile) {
       setFile(uploadedFile);
-      setPreview(URL.createObjectURL(uploadedFile));
+
+      // Show preview only for images
+      if (uploadedFile.type.startsWith("image/")) {
+        setPreview(URL.createObjectURL(uploadedFile));
+      } else {
+        setPreview(null);
+      }
     }
   };
 
   const handleUpload = async () => {
-    if (!file) return alert("Please select a file first.");
+    if (!file) return alert("⚠️ Please select a file first.");
 
     setLoading(true);
     setProgress(0);
@@ -29,15 +36,25 @@ export default function Upload() {
     try {
       const { data } = await axios.post("http://localhost:5000/upload", formData, {
         onUploadProgress: (progressEvent) => {
-          const percentCompleted = Math.round((progressEvent.loaded * 100) / progressEvent.total);
-          setProgress(percentCompleted);
+          setProgress(Math.round((progressEvent.loaded * 100) / progressEvent.total));
         },
       });
 
-      setResponse(data);
+      if (data.extractedData) {
+        navigate("/invoice-details", { state: { extractedData: data.extractedData } });
+      } else {
+        alert("⚠️ No tax details found. Ensure your invoice has clear tax data.");
+      }
     } catch (error) {
       console.error("Upload failed:", error);
-      alert("Error uploading file.");
+
+      if (error.response) {
+        alert(`Server Error: ${error.response.data.message || "Something went wrong."}`);
+      } else if (error.request) {
+        alert("⚠️ No response from server. Check your internet connection.");
+      } else {
+        alert("⚠️ Upload failed. Please try again.");
+      }
     } finally {
       setLoading(false);
     }
@@ -65,10 +82,17 @@ export default function Upload() {
           </div>
         )}
 
+        {/* File Info */}
+        {file && (
+          <div className="text-muted mt-2">
+            <small>📁 {file.name} | {file.type} | {(file.size / 1024).toFixed(2)} KB</small>
+          </div>
+        )}
+
         {/* Upload Button */}
         <button
           onClick={handleUpload}
-          className="btn btn-success w-100"
+          className="btn btn-success w-100 mt-2"
           disabled={!file || loading}
         >
           🚀 {loading ? "Uploading..." : "Upload Document"}
@@ -87,21 +111,13 @@ export default function Upload() {
         )}
       </div>
 
-      {/* Extracted Text Display */}
-      {response && (
-        <div className="card mt-4 p-3 shadow" style={{ maxWidth: "600px", width: "100%" }}>
-          <h4 className="text-dark">📝 Extracted Text:</h4>
-          <p className="text-muted mt-2">{response.extractedText}</p>
-        </div>
-      )}
-
       {/* Floating AI Chat Button */}
       <a
         href="/chatbot"
-        className="position-fixed bottom-0 start-50 translate-middle-x btn btn-lg btn-warning shadow-lg d-flex align-items-center gap-2"
-        style={{ marginBottom: "20px" }}
+        className="position-fixed bottom-3 end-3 btn btn-lg btn-warning shadow-lg d-flex align-items-center gap-2"
+        style={{ zIndex: 1050, padding: "10px 20px" }}
       >
-        <MessageCircle size={20} /> Start AI Chat
+        <MessageCircle size={20} /> AI Chat
       </a>
     </div>
   );
