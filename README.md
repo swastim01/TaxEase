@@ -192,11 +192,11 @@ For questions, feedback, or collaboration opportunities, please reach out:
 
 ## Demo
 
-Check out the live demo of TaxEase:  
-[**View Demo**](https://taxease-molsp50dq-swasti-mishras-projects.vercel.app/)
+Check out the live demo of TaxEase (note: this is just the frontend deployment link):  
+[**View Demo**](https://taxease-cr98p2s4x-swasti-mishras-projects.vercel.app/)
 
 For detailed deployment information, visit:  
-[**Deployment Details**](https://vercel.com/swasti-mishras-projects/taxease/EvRimzbsxHGU7UqE6LHsjbB95nnt)
+[**Deployment Details**](https://vercel.com/swasti-mishras-projects/taxease/91diWnFkTKbjq4BfURKSgZEmNus6)
 
 ---
 
