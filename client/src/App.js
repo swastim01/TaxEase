@@ -32,6 +32,7 @@ function App() {
   }, [darkMode]);
 
   return (
+    
     <Router>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <div className="app-container">
