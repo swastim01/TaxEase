@@ -10,7 +10,11 @@ export default function Navbar({ darkMode, setDarkMode }) {
     <nav className={`navbar navbar-expand-lg ${darkMode ? "navbar-dark bg-dark" : "navbar-light bg-light"} shadow`}>
       <div className="container">
         {/* Brand Logo */}
-        <Link className="navbar-brand fw-bold" to="/">💰 TaxEase</Link>
+        <Link className="navbar-brand fw-bold" to="/">
+  <img src="/logo.jpg" alt="TaxEase Logo" width="40" height="40" className="d-inline-block align-top" />
+  TaxEase
+</Link>
+
 
         {/* Navbar Toggle Button for Mobile */}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

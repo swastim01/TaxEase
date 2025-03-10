@@ -21,9 +21,13 @@ export default function Footer() {
 
           {/* Center - Branding */}
           <div className="col-md-4">
-            <h5 className="fw-bold">💰 TaxEase</h5>
-            <p className="text-muted-white">Making tax filing easier and smarter.</p>
-          </div>
+  <h5 className="fw-bold">
+    <img src="/logo.jpg" alt="TaxEase Logo" width="40" height="40" className="me-2" />
+    TaxEase
+  </h5>
+  <p className="text">Making tax filing easier and smarter.</p>
+</div>
+
 
           {/* Right - Social Media Icons */}
           <div className="col-md-4">
