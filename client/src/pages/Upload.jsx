@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { UploadCloud, MessageCircle } from "lucide-react";
@@ -10,6 +10,27 @@ export default function Upload() {
   const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState(0);
   const navigate = useNavigate();
+  
+  // State to determine if the footer is in view
+  const [isAboveFooter, setIsAboveFooter] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Adjust the selector if your footer uses a different tag or class
+      const footer = document.querySelector("footer");
+      if (footer) {
+        const footerTop = footer.getBoundingClientRect().top;
+        // If the top of the footer is within the viewport height,
+        // we assume it’s time to move the button up
+        setIsAboveFooter(footerTop <= window.innerHeight);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    // Initial check
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleFileChange = (e) => {
     const uploadedFile = e.target.files[0];
@@ -47,7 +68,6 @@ export default function Upload() {
       }
     } catch (error) {
       console.error("Upload failed:", error);
-
       if (error.response) {
         alert(`Server Error: ${error.response.data.message || "Something went wrong."}`);
       } else if (error.request) {
@@ -65,7 +85,7 @@ export default function Upload() {
       <h2 className="display-5 fw-bold mb-3 text-primary">📂 Upload Your Documents</h2>
       <p className="text-secondary">Submit your tax documents and get instant AI-driven insights.</p>
 
-      {/* File Upload */}
+      {/* File Upload Card */}
       <div className="card shadow-lg p-4 mt-3" style={{ maxWidth: "500px", width: "100%" }}>
         <div className="mb-3">
           <label className="btn btn-primary w-100">
@@ -85,7 +105,9 @@ export default function Upload() {
         {/* File Info */}
         {file && (
           <div className="text-muted mt-2">
-            <small>📁 {file.name} | {file.type} | {(file.size / 1024).toFixed(2)} KB</small>
+            <small>
+              📁 {file.name} | {file.type} | {(file.size / 1024).toFixed(2)} KB
+            </small>
           </div>
         )}
 
@@ -114,10 +136,17 @@ export default function Upload() {
       {/* Floating AI Chat Button */}
       <a
         href="/chatbot"
-        className="position-fixed bottom-3 end-3 btn btn-lg btn-warning shadow-lg d-flex align-items-center gap-2"
-        style={{ zIndex: 1050, padding: "10px 20px" }}
+        className="btn btn-lg btn-warning shadow-lg d-flex align-items-center gap-2"
+        style={{
+          position: "fixed",
+          bottom: isAboveFooter ? "80px" : "20px", // Adjusts position if footer is in view
+          right: "20px",
+          zIndex: 1050,
+          padding: "10px 20px",
+          transition: "bottom 0.3s ease-in-out"
+        }}
       >
-        <MessageCircle size={20} /> AI Chat
+        <MessageCircle size={20} /> Start AI Chat?
       </a>
     </div>
   );

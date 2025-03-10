@@ -1,18 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-
 import { useLocation, useNavigate } from "react-router-dom";
 import {
-    FileText,
-    User,
-    Briefcase,
-    Calendar,
-    DollarSign,
-    ClipboardCheck,
-    ExternalLink,
-    MessageCircle
-  } from "lucide-react";
-  
+  FileText,
+  User,
+  DollarSign,
+  ClipboardCheck,
+  ExternalLink,
+  MessageCircle
+} from "lucide-react";
+
 // Using jsPDF from CDN (ensure the following script is added in public/index.html):
 // <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 const { jsPDF } = window.jspdf;
@@ -171,15 +168,19 @@ export default function SalarySlipDetails() {
         </button>
 
         <div className="text-center">
-          <button className="btn btn-info me-3 d-flex align-items-center gap-2" onClick={() => navigate("/chatbot")}>
+          <button
+            className="btn btn-info me-3 d-flex align-items-center gap-2"
+            onClick={() => navigate("/chatbot")}
+          >
             <MessageCircle size={20} /> Chat with AI for Missed Deductions
           </button>
         </div>
+
         <a
           href="/coming-soon"
           target="_blank"
           rel="noreferrer"
-          className="btn btn-primary d-flex align-items-center gap-2 justify-content-center mt-3"
+          className="btn btn-primary d-flex align-items-center gap-2 justify-content-center mt-3 mb-5"
         >
           <ExternalLink size={20} /> File Taxes on Govt Portal
         </a>
